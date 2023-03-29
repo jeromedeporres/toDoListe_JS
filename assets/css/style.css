@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*     font-family: 'Comfortaa', cursive;
+ */
+}
+
+body {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    /*   background-repeat: no-repeat; */
+}
+
+
+/*--------------TODO LISTE-------------*/
+
+#textIntro {
+    font-family: 'Rancho', cursive;
+}
+
+.container {
+    border-radius: 25px;
+    box-shadow: 1px 5px 20px 25px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+#topic {
+    padding: 2%;
+    box-shadow: 1px 5px 20px 25px rgba(0, 0, 0, 0.1);
+    width: 65%;
+    float: left;
+    margin: 3%;
+    opacity: 0.8;
+    font-family: 'Rancho', cursive;
+}
+
+.container p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container .inputField {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    height: 45px;
+}
+
+.inputField input {
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.inputField input:focus {
+    border-color: green;
+}
+
+.inputField textarea:focus {
+    border-color: green;
+}
+
+.inputField button {
+    width: 100px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 21px;
+    outline: none;
+    background: green;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.boxFooter button:hover {
+    background: red;
+}
+
+.inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* .container .todoList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+ */
+
+.todoList li {
+    position: relative;
+    list-style: none;
+    height: 75px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList li .icon {
+    position: absolute;
+    right: -45px;
+    background: red;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.todoList li:hover .icon {
+    right: 0px;
+}
+
+#myTasks {
+    padding: 1% 5% 5%;
+    box-shadow: 1px 5px 20px 25px rgba(0, 0, 0, 0.1);
+    width: 65%;
+    float: left;
+    margin: 3%;
+    opacity: 0.8;
+}
+
+.container .boxFooter {
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxFooter button {
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: green;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.boxFooter button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*---------------COMPTEUR DES TACHE(S)-----------*/
+
+.pendingTasksCounter {
+    color: green;
+    font-size: 20px;
+}
+
+#pendingTasks {
+    float: right;
+    font-size: 18px;
+}
+
+
+/*---------------BODY FOOTER-----------*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 1%;
+}
+
+
+/*------------IMAGES-----------------*/
+
+#images {
+    width: 20%;
+    padding: 2%;
+    border-radius: 25px;
+    float: right;
+    margin: 2%;
+    /* box-shadow: 1px 5px 20px 25px rgba(0, 0, 0, 0.1); */
+}
+
+#imgList img {
+    padding: 10%;
+    border-radius: 25%;
+    box-shadow: 1px 5px 20px 25px rgba(0, 0, 0, 0.1);
+}

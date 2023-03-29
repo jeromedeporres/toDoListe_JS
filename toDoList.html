@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Merienda&family=Nova+Cut&family=Rancho&display=swap" rel="stylesheet">
+    <title>MiniProjet-ToDoListe</title>
+</head>
+
+<body onload="init()">
+    <div class="container" id="topic">
+        <h1 class="display-8 ">APPLICATION GESTION DES TACHES</h1>
+
+        <p>CDA COMPIEGNE</p>
+    </div>
+    <!-- AFFICHAGE DES IMAGES -->
+    <div class="container-fluid" id="images">
+        <div class="row">
+            <div class="col-xs-6">
+                <div id="imgList"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="myTasks">
+
+        <!-- AFFICHAGE DE(S) NOMBRE(S) DE(S) TACHE(S) -->
+        <div id="pendingTasks">
+            <span>Vous-avez <b class="pendingTasksCounter"></b> tâche(s)</span>
+        </div>
+        <div class="row">
+            <div class="col-xs-6" id="textIntro">
+                <p class=" text-center">Entrez une tâche et une description de votre tâche et appuyez sur le bouton [+]. </p>
+                <P class="text-center">Vous pouvez changer votre image de fond avec une click sur une des images a votre droite.</P>
+            </div>
+            <!-- INPUT TACHES et DESCRIPTION -->
+            <!--          <div class="inputField">
+                <label for="inputDate"><b>Date</b></label>
+                <input type="date" id="inputDate">
+            </div>
+ -->
+            <div class="inputField">
+                <label for="inputTask"><b>Tâche</b></label>
+                <input type="text" id="inputTask" placeholder="Ajoutez votre Tâche ">
+            </div>
+            <div class="inputField">
+                <label for="inputDescription1"><b>Déscription</b></label>
+                <textarea class="form-control" id="inputDescription" rows="3 " placeholder="Ajoutez votre Déscription"></textarea>
+                <small id="textHelp" class="form-text text-muted">Max 300 caractères.</small>
+            </div>
+            <div class="inputField ">
+                <button><i class="fas fa-plus "></i></button>
+            </div>
+
+            <!-- AFFICHAGE LES TACHES et DESCRIPTION -->
+            <div>
+                <ul class="todoList"> </ul>
+            </div>
+
+            <!-- OPTION POUR SUPPRIMER TOUTES LES TACHES -->
+            <div class="boxFooter ">
+                <button>Supprimer tous</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/script/script.js "></script>
+</body>
+<footer>
+    <p>Réalisée par - <b>Jérôme ANTON MARTIN DE PORRES</b> - TP CDA 3 - Greta Compiègne</p>
+</footer>
+
+</html>
